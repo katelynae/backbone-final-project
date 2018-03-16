@@ -1,21 +1,15 @@
 
-
-
 var TrackList = Backbone.Collection.extend({
-	method: 'POST',
-	url: "https://api.spotify.com/v1/search?q=hello&type=track&limit=15",
-	data: {
-		grant_type: 'client_credentials'
-
-	},
-	headers: {
-		"Authorization": "Basic aa1a0f8993a741ce9de04521eee16149:716bc61dd08e453c99e5da8fe0812b02"
-	},
-	initialize: function(){
+	model: Song,
+	url: 'http://ws.audioscrobbler.com/2.0/?method=track.search&track=Believe&api_key=f959d6d5a5eb763fa1d3d2b438cde9a1&format=json',
+	initialize: function(options) {
 		this.fetch();
+	},
+	parse: function(response){
+		return response.track;
 	}
 });
 
-var tracklist = new TrackList();
+var tracklist = new TrackList({});
 
-console.log(tracklist);
+console.log(tracklist.create());

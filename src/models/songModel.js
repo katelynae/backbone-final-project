@@ -1,8 +1,7 @@
 var Song = Backbone.Model.extend({
-	defaults: {
-		title: null,
-		artist: null,
-		album: null,
-		image: null
+	initialize: function(options)   {
+
 	}
 });
+
+var song = new Song({});
