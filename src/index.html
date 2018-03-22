@@ -10,12 +10,15 @@
 
 <div id="songs">
 
-  <label for="generateSongs">Enter Keyword: </label>
-  <input id="generateSongs" type="text" />
+  <form id="addSong" action="#">
 
-  <button class="generate">Find Songs</button>
+        <label for="generateSongs">Enter Keyword: </label>
+        <input id="generateSongs" type="text" />
 
-    <form id="addSong" action="#">
+        <button class="generate">Find Songs</button>
+
+        <div class="resultsContainer"></div>
+    
         <div id="song">
             <label for="coverImage">CoverImage: </label>
             <input id="coverImage" type="file" />
@@ -39,6 +42,16 @@
     </ul>
 
     <button class="delete">Delete</button>
+  </div>
+</script>
+
+<script id="searchTemplate" type="text/template">
+  <div class="resultContainer">
+        <img width="150" src="<%= coverImage %>"/>
+        <div class="title"><%= title %></div>
+        <div class="artist"><%= artist %></div>
+        
+      <button class="add">Add</button>
   </div>
 </script>
 
