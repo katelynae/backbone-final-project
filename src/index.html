@@ -17,12 +17,12 @@
 
         <button class="generate">Find Songs</button>
 
-        <div class="resultsContainer"></div>
+        <div id="resultsContainer"></div>
     
         <div id="song">
             <label for="coverImage">CoverImage: </label>
             <input id="coverImage" type="file" />
-            <label for="title">Title: </label><input id="title" type="text" />
+            <label for="name">Title: </label><input id="name" type="text" />
             <label for="artist">Artist: </label><input id="artist" type="text" />
             <button id="add">Add</button>
         </div>
@@ -37,7 +37,7 @@
   <div class="songContainer">
     <img width="150" src="<%= coverImage %>"/>
     <ul>
-        <li><%= title %></li>
+        <li><%= name %></li>
         <li><%= artist %></li>
     </ul>
 
@@ -46,13 +46,11 @@
 </script>
 
 <script id="searchTemplate" type="text/template">
-  <div class="resultContainer">
-        <img width="150" src="<%= coverImage %>"/>
-        <div class="title"><%= title %></div>
-        <div class="artist"><%= artist %></div>
+        <img class="child" width="150" src="<%= coverImage %>"/>
+        <div class="child name"><%= name %></div>
+        <div class="child artist"><%= artist %></div>
         
       <button class="add">Add</button>
-  </div>
 </script>
 
 
@@ -64,8 +62,11 @@
   <!-- include source files here... -->
   <script src="models/songModel.js"></script>
   <script src="collections/playlistCollection.js"></script>
+  <script src="collections/searchCollection.js"></script>
   <script src="views/playlistView.js"></script>
   <script src="views/songView.js"></script>
+  <script src="views/searchView.js"></script>
+  <script src="views/resultView.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -2,12 +2,14 @@ var app = app || {};
 
 $(function() {
     var songs = [
-        { title: 'Believer', artist: 'Imagine Dragons'},
-        { title: 'Believe Me Natalie', artist: 'The Killers'},
-        { title: 'Believe', artist: 'Cher'},
-        { title: 'I Believe in a Thing Called Love', artist: 'The Darkness'},
-        { title: 'Believe', artist: 'Mumford & Sons'},
+        { name: 'Believer', artist: 'Imagine Dragons'},
+        { name: 'Believe Me Natalie', artist: 'The Killers'},
+        { name: 'Believe', artist: 'Cher'},
+        { name: 'I Believe in a Thing Called Love', artist: 'The Darkness'},
+        { name: 'Believe', artist: 'Mumford & Sons'},
     ];
 
-    new app.PlaylistView(songs);
+    app.playlist = new app.Playlist();
+
+    new app.PlaylistView(app.playlist);
 });
