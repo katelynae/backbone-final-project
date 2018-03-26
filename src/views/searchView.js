@@ -1,11 +1,18 @@
 var app = app || {};
 
-app.searchresults = new app.SearchResults();
-app.searchresults.fetch();
+
+
 
 app.SearchView = Backbone.View.extend({
     el: '#resultsContainer',
-    initialize: function(){
+    events: {
+        'click #generate': 'generateSongs'
+    },
+    generateSongs: function(){
+        var keyword = $('#keyword').val();
+        app.searchresults = new app.SearchResults();
+        app.searchresults.url = 'http://ws.audioscrobbler.com/2.0/?method=track.search&track='+keyword+'&api_key=f959d6d5a5eb763fa1d3d2b438cde9a1&format=json';
+        app.searchresults.fetch();
         this.collection=app.searchresults;
         this.listenTo( this.collection, 'add', this.render );
         this.render();
@@ -24,5 +31,6 @@ app.SearchView = Backbone.View.extend({
         this.$el.append( resultView.render().el );
     }
 });
+
 
 app.searchview = new app.SearchView();

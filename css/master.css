@@ -48,10 +48,6 @@ body {
     clear: both;
 }
 
-#addSong div {
-    width: 550px;
-}
-
 #addSong div:after {
     content: "";
     display: block;
@@ -60,4 +56,18 @@ body {
     clear: both;
     font-size: 0;
     line-height: 0;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.resultContainer {
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    margin: 5px;
 }
