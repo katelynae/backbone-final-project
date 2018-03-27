@@ -2,7 +2,7 @@ var app = app || {};
 
 app.SongView = Backbone.View.extend({
     tagName: 'div',
-    className: 'playlistContainer',
+    className: 'songContainer',
     template: _.template( $('#songTemplate').html() ),
     events: {
         'click .delete': 'deleteSong'

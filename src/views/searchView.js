@@ -11,7 +11,7 @@ app.SearchView = Backbone.View.extend({
     generateSongs: function(){
         var keyword = $('#keyword').val();
         app.searchresults = new app.SearchResults();
-        app.searchresults.url = 'https://ws.audioscrobbler.com/2.0/?method=track.search&track='+keyword+'&api_key=f959d6d5a5eb763fa1d3d2b438cde9a1&format=json';
+        app.searchresults.url = 'http://ws.audioscrobbler.com/2.0/?method=track.search&track='+keyword+'&api_key=f959d6d5a5eb763fa1d3d2b438cde9a1&format=json';
         app.searchresults.fetch();
         this.collection=app.searchresults;
         this.listenTo( this.collection, 'add', this.render );

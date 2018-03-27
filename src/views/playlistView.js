@@ -2,7 +2,7 @@
 var app = app || {};
 
 app.PlaylistView = Backbone.View.extend({
-    el: '#songs',
+    el: '#playlistContainer',
     events: {
         'click #save': 'saveSongs'
     },

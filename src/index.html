@@ -22,7 +22,7 @@
   </div>
 
 <h2>My Playlist</h2>
-<div class="playlistContainer">
+<div id="playlistContainer">
   <button id="save">Save Playlist</button>
 
 </div>
@@ -31,7 +31,7 @@
 </div>
 
 <script id="songTemplate" type="text/template">
-  <div class="songContainer">
+
     <img width="150" src="<%= coverImage %>"/>
     <ul>
         <li><%= name %></li>
@@ -39,7 +39,7 @@
     </ul>
 
     <button class="delete">Delete</button>
-  </div>
+
 </script>
 
 <script id="searchTemplate" type="text/template">
