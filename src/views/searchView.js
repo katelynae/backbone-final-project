@@ -4,7 +4,7 @@ var app = app || {};
 
 
 app.SearchView = Backbone.View.extend({
-    el: '#resultsContainer',
+    el: '#searchContainer',
     events: {
         'click #generate': 'generateSongs'
     },
@@ -19,7 +19,7 @@ app.SearchView = Backbone.View.extend({
         console.log(app.searchresults);
     },
     render: function(){
-        this.$el.empty();
+        this.$el.find('#resultsContainer').empty();
         this.collection.each(function(item) {
             this.renderSong(item);
         }, this );
@@ -28,7 +28,7 @@ app.SearchView = Backbone.View.extend({
         var resultView = new app.ResultView({
             model: item
         });
-        this.$el.append( resultView.render().el );
+        this.$el.find('#resultsContainer').append( resultView.render().el );
     }
 });
 
