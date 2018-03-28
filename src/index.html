@@ -3,27 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>Playlist Maker</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="../css/master.css">
 </head>
 <body>
 
+<h1>Play My Mood</h1>
 
 <div id="songs">
 
   <div id="searchContainer">
-    <label for="keyword">Enter Keyword: </label>
-    <input id="keyword" type="text" />
-  
-    <button id="generate">Find Songs</button>
+    <div id="searchForm">
+      <label for="keyword"><h2>Search a Feeling: </h2></label>
+      <input id="keyword" type="text" />
+    
+      <button class="btn cta" id="generate">Find Songs</button>
+    </div>
 
     <div id="resultsContainer">
 
     </div>
   </div>
 
-<h2>My Playlist</h2>
+
 <div id="playlistContainer">
-  <button id="save">Save Playlist</button>
+  <h2>My Playlist</h2>
+  <button class="btn cta" id="save">Save Playlist</button>
 
 </div>
 
@@ -38,7 +43,7 @@
         <li><%= artist %></li>
     </ul>
 
-    <button class="delete">Delete</button>
+    <button class="btn ghost delete">Delete</button>
 
 </script>
 
@@ -48,7 +53,7 @@
         <div class="child name"><%= name %></div>
         <div class="child artist"><%= artist %></div>
         
-      <button class="add">Add</button>
+      <button class="btn ghost add">Add</button>
 </script>
 
 

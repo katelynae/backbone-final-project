@@ -1,9 +1,23 @@
 body {
-    background-color: #eee;
+    background-color: #e0ebeb;
+    font-family: 'Josefin Sans', 'sans-serif';
+    color: #1f2e2e;
+}
+
+h1 {
+    text-align: center;
+}
+
+#songs{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .songContainer {
-    outline: 1px solid #aaa;
+    outline: 1px solid #bd400f;
+    border-radius: 2px;
     width: 350px;
     background-color: #fff;
     float: left;
@@ -25,37 +39,20 @@ body {
     margin: 10px;
 }
 
-#addSong label {
-    width: 100px;
-    margin-right: 10px;
-    text-align: right;
-    line-height: 25px;
-}
-
-#addSong label, #addSong input {
+label {
     display: block;
-    margin-bottom: 10px;
 }
 
-#addSong label[for="title"], #addSong label[for="releaseDate"] {
-    clear: both;
+#searchContainer {
+    margin-right: 50px;
 }
 
-#addSong button {
-    display: block;
-    margin: 5px 20px 10px 10px;
-    float: right;
-    clear: both;
-}
 
-#addSong div:after {
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-    font-size: 0;
-    line-height: 0;
+input#keyword {
+    height: 30px;
+    border: 1px solid #bd400f;
+    border-radius: 2px;
+    font-size: 18px;
 }
 
 #resultsContainer {
@@ -68,6 +65,60 @@ body {
     width: 200px;
     padding: 10px;
     background-color: #fff;
-    border: 1px solid #aaa;
+    border: 1px solid #bd400f;
+    border-radius: 2px;
     margin: 5px;
+    text-align:center;
 }
+
+#playlistContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: #f9cbb8;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 2px;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta {
+  background-color: #F07444;
+  color: white;
+  
+  transition: .2s ease;
+}
+
+.cta:hover {
+    background-color: #bd400f;
+    border: 1px solid #bd400f;
+    
+    transition: .2s ease;
+}
+
+
+.ghost {
+  background-color: transparent;
+  color: #F07444;
+  border: 1px solid #F07444;
+  
+  transition: .2s ease;
+  
+ }
+  
+.ghost:hover {
+    background-color: #F07444;
+    color: white;
+
+    transition: .2s ease;
+}
+
