@@ -2,8 +2,12 @@ var app = app || {};
 
 app.Song = Backbone.Model.extend({
     defaults: {
-        coverImage: '../img/placeholder-cover.png',
+        image: '../img/placeholder-cover.png',
         name: 'No title',
         artist: 'Unknown'
+    },
+    urlRoot: 'http://localhost:3000/playlist',
+    initialize: function(options){
+    	this.set('image', this.get('image')[2]['#text']);
     }
 });

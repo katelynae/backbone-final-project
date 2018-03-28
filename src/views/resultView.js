@@ -9,8 +9,7 @@ app.ResultView = Backbone.View.extend({
 	},
 	addSong: function(x) {
 	    x.preventDefault();
-	    app.playlist.add( this.model );
-        console.log(app.playlist);
+	    app.playlist.add( new app.Song(this.model.toJSON()) );
 	},
     initialize: function() {       
         this.listenTo( this.collection, 'add', this.renderSong );
