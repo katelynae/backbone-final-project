@@ -1,119 +1,14 @@
 {
   "playlist": [
     {
-      "id": 0,
-      "name": "My Playlist"
-    },
-    {
-      "coverImage": "../img/placeholder-cover.png",
-      "name": "Skinny Love",
-      "artist": "Bon Iver",
-      "url": "https://www.last.fm/music/Bon+Iver/_/Skinny+Love",
+      "image": "https://lastfm-img2.akamaized.net/i/u/174s/7cfe09c7db74413cb72709f83b2f96c8.png",
+      "name": "Shiny Happy People",
+      "artist": "R.E.M.",
+      "url": "https://www.last.fm/music/R.E.M./_/Shiny+Happy+People",
       "streamable": "FIXME",
-      "listeners": "1039766",
-      "image": [
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/34s/a025e0630b9140cf99c0df75bb3feeb5.png",
-          "size": "small"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/64s/a025e0630b9140cf99c0df75bb3feeb5.png",
-          "size": "medium"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/174s/a025e0630b9140cf99c0df75bb3feeb5.png",
-          "size": "large"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/a025e0630b9140cf99c0df75bb3feeb5.png",
-          "size": "extralarge"
-        }
-      ],
-      "mbid": "4e46d449-e549-4f53-babb-5fe492a87cc8",
+      "listeners": "491251",
+      "mbid": "c4b618c1-9507-4238-8e13-657286547b09",
       "id": 1
-    },
-    {
-      "coverImage": "../img/placeholder-cover.png",
-      "name": "Love Will Tear Us Apart",
-      "artist": "Joy Division",
-      "url": "https://www.last.fm/music/Joy+Division/_/Love+Will+Tear+Us+Apart",
-      "streamable": "FIXME",
-      "listeners": "1080764",
-      "image": [
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/34s/4ad5ce1d8b5b47368d8873ae1e6e2f42.png",
-          "size": "small"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/64s/4ad5ce1d8b5b47368d8873ae1e6e2f42.png",
-          "size": "medium"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/174s/4ad5ce1d8b5b47368d8873ae1e6e2f42.png",
-          "size": "large"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/4ad5ce1d8b5b47368d8873ae1e6e2f42.png",
-          "size": "extralarge"
-        }
-      ],
-      "mbid": "436a7933-e085-4a33-acd5-351c18788ad3",
-      "id": 2
-    },
-    {
-      "coverImage": "../img/placeholder-cover.png",
-      "name": "LoveGame",
-      "artist": "Lady Gaga",
-      "url": "https://www.last.fm/music/Lady+Gaga/_/LoveGame",
-      "streamable": "FIXME",
-      "listeners": "821913",
-      "image": [
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/34s/8eadda33fdd2fe3649946fcc80bc3eae.png",
-          "size": "small"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/64s/8eadda33fdd2fe3649946fcc80bc3eae.png",
-          "size": "medium"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/174s/8eadda33fdd2fe3649946fcc80bc3eae.png",
-          "size": "large"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/8eadda33fdd2fe3649946fcc80bc3eae.png",
-          "size": "extralarge"
-        }
-      ],
-      "mbid": "baec3223-cf18-4301-bcde-7fd95921ce8a",
-      "id": 3
-    },
-    {
-      "image": [
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/34s/e873f3d90636ad19a53d27a1bed2945a.png",
-          "size": "small"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/64s/e873f3d90636ad19a53d27a1bed2945a.png",
-          "size": "medium"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/174s/e873f3d90636ad19a53d27a1bed2945a.png",
-          "size": "large"
-        },
-        {
-          "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/e873f3d90636ad19a53d27a1bed2945a.png",
-          "size": "extralarge"
-        }
-      ],
-      "name": "Lovefool",
-      "artist": "The Cardigans",
-      "url": "https://www.last.fm/music/The+Cardigans/_/Lovefool",
-      "streamable": "FIXME",
-      "listeners": "642650",
-      "mbid": "45024c74-c06d-423e-adfc-bb9e203091a4",
-      "id": 4
     }
   ]
 }

@@ -4,5 +4,11 @@ $(function() {
 
     app.playlist = new app.Playlist();
 
-    new app.PlaylistView(app.playlist);
+    app.playlist.fetch().then(function(){
+
+      new app.PlaylistView(app.playlist);
+
+    });
+
+
 });

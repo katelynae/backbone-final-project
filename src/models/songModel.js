@@ -8,6 +8,8 @@ app.Song = Backbone.Model.extend({
     },
     urlRoot: 'http://localhost:3000/playlist',
     initialize: function(options){
-    	this.set('image', this.get('image')[2]['#text']);
+    	if( _.isArray(options.image) ){
+    		this.set('image', this.get('image')[2]['#text']);
+    	}
     }
 });
